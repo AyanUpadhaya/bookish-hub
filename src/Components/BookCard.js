@@ -22,8 +22,8 @@ const BookCard = (props) => {
             <img src={img} className="card-img-top img-fluid h-50" alt="..." />
             <div className="card-body">
                 <h5 className="card-title">{name}</h5>
-                <p className="card-text">{category}</p>
-                <p className="card-text">{author}</p>
+                <p className="card-text">Category: {category}</p>
+                <p className="card-text">Author: {author}</p>
                 <select className="form-select mt-auto" aria-label="Default select example" onChange={handleShelveChange}>
                 <option>Move to</option>
                     <option value="currently reading">Currently Reading</option>
